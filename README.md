@@ -9,7 +9,7 @@ Esta aplicacion fue creada con el fin de agilizar la busqueda de Pokémons.
 > En caso de no encontrar ninguna coincidencia dará un mensaje de aviso
 > Se listan todos los pokémons de la busqueda
 > Se utiliza una Api para realizar la busqueda y filtro de los pokémons. La misma trabaja con la apirest de PokeApi tal como se solicita.
-> El repo utilizada es el siguiente:
+> El repo utilizada es el siguiente: https://github.com/RosLauga/pokeapi
 
 # tecnologías
 

@@ -25,7 +25,7 @@ const Main = (props) => {
       </section>
       <footer className="footer">
         <span>Hecho por Lauga Rodrigo</span>
-        <a href="">Repo de la Aplicación</a>
+        <a href="https://github.com/RosLauga/pokeapi">Repo de la Aplicación</a>
       </footer>
     </>
   );
