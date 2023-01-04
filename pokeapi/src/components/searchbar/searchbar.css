@@ -1,0 +1,20 @@
+.input_search {
+    min-width: 20vw;
+    padding:5px 10px;
+    border-radius: 5px;
+    margin: auto .5em;
+}
+
+.button_search {
+    padding:5px 10px;
+    color: white;
+    font-weight: bold;
+    border:none;
+    cursor: pointer;
+    background-color: rgb(38, 153, 206);
+}
+
+.button_search:hover {
+    background-color: rgba(59, 172, 224, 0.623);
+}
+
