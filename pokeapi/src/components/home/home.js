@@ -9,15 +9,7 @@ const Home = () => {
   const [Loading, setLoading] = useState();
 
   useEffect(() => {
-    axios
-      .get(process.env.REACT_APP_URL)
-      .then((result) => {
-        if (result) {
-          console.log("Datos cargos");
-          console.log(process.env.REACT_APP_URL);
-        }
-      })
-      .catch((err) => console.log("Error"));
+    axios.get(process.env.REACT_APP_URL);
   }, []);
 
   useEffect(() => {
@@ -28,7 +20,7 @@ const Home = () => {
     e.preventDefault();
     setLoading(true);
     axios
-      .get(process.env.REACT_APP_URL + "/?name=" + name.toLowerCase())
+      .get(process.env.REACT_APP_URL + "/search/?name=" + name.toLowerCase())
       .then((result) => {
         setInfo(result.data);
       })
