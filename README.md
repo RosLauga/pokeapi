@@ -13,11 +13,7 @@ Esta aplicacion fue creada con el fin de agilizar la busqueda de Pokémons.
 
 # tecnologías
 
-React (CRA)
-Nodejs
-Express
-VScode
-Git
+React (CRA) | Nodejs | Express | VScode | Git
 
 # Instalación
 
