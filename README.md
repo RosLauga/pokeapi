@@ -18,6 +18,7 @@ React (CRA) | Nodejs | Express | VScode | Git
 # Instalación
 
 > Api: Una vez clonado el repositorio, se debera entrar a la carpeta api y realizar un "npm i", luego se podra correr el servidor con "node server.js".
+
 > App: Una vez clonado el repositorio, se deberá ingresar a la carpeta pokeapi, realizar un "npm i", luego se podrá levantar la apliación con "npm start". El archivo .env con la ruta de la api se incluye en el repo.
 
 # Implementación y mejoras a realizar
