@@ -32,3 +32,5 @@ A la hora de realizar la busqueda, he encontrado que hay muchos resultados segú
 > Mejora propuesta: Se puede implementar un páginado para los casos que el listado de pokémons sea muy extenso, esto ayuda a la experiencia del usuario a la hora de navegar.
 
 > Mejora si escala el proyecto: la utilización de redux ordenaría las peticiones, protegería la información y se podría utilizar el filtro de los datos desde el Front sin necesidad de hacer peticiones al back.
+
+> Mejora: Agregar filtros especificos, por ejemplo por tipo de pokémon, por zona, por ataques etc.
