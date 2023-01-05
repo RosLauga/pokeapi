@@ -22,14 +22,15 @@ Git
 # Instalación
 
 > Api: Una vez clonado el repositorio, se debera entrar a la carpeta api y realizar un "npm i", luego se podra correr el servidor con "node server.js".
-> App: Una vez clonado el repositorio, se deberá ingresar a la carpeta pokeapi, realizar un "npm i", luego se podrá levantar la apliación con "npm start".
+> App: Una vez clonado el repositorio, se deberá ingresar a la carpeta pokeapi, realizar un "npm i", luego se podrá levantar la apliación con "npm start". El archivo .env con la ruta de la api se incluye en el repo.
 
 # Implementación y mejoras a realizar
 
-Teniendo en cuenta que la pokeapi tiene su limitaciones a la hora de la busqueda, se procedió a realizar una copia del listado de pokémons al servidor. De esta manera, se pueden realizar los filtros necesarios para buscar 1 o más pokémons.
+Teniendo en cuenta que la pokeapi tiene su limitaciones a la hora de la busqueda, se procedió a realizar una copia del listado de pokémons al servidor. De esta manera, se pueden realizar los filtros necesarios para buscar 1 o más pokémons. Se ha guardado un listado completo de los datos en un json llamadao db.json, que al ingresar por primera vez a la aplicación se genera, una vez creado no vuelve a solicitar el listado completo a la api rest.
 
 > Mejora propuesta: En estos casos se recomienda utilizar una base de datos propia para realizar una copia del listado y poder realizar la busquedas más eficientemente con las queries proporcionadas por la db. Esto aceleraría y sería más perfomante a la hora de trabajar con grandes volumenes de datos.
 
 A la hora de realizar la busqueda, he encontrado que hay muchos resultados según el parametro, por lo que el listado puede ser muy extenso.
 
 > Mejora propuesta: Se puede implementar un páginado para los casos que el listado de pokémons sea muy extenso, esto ayuda a la experiencia del usuario a la hora de navegar.
+> Mejora si escala el proyecto: la utilización de redux ordenaría las peticiones, protegería la información y se podría utilizar el filtro de los datos desde el Front sin necesidad de hacer peticiones al back.
