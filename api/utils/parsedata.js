@@ -14,7 +14,7 @@ const ParseData = async (pokemon) => {
     obj.img = data.data.sprites.front_default;
     arrayaux.push(obj);
   }
-  console.log(arrayaux);
+
   return arrayaux;
 };
 
