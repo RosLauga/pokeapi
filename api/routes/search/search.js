@@ -7,12 +7,16 @@ const axios = require("axios");
 var listpokemon;
 
 app.get("/", async (req, res) => {
-  axios
-    .get("https://pokeapi.co/api/v2/pokemon/?offset=0&limit=1154")
-    .then((result) => {
-      listpokemon = result.data.results;
-      fs.writeFileSync("data/db.json", JSON.stringify(result.data.results));
-    });
+  if (fs.existsSync("data/db.json")) {
+    return;
+  } else {
+    axios
+      .get("https://pokeapi.co/api/v2/pokemon/?offset=0&limit=1154")
+      .then((result) => {
+        listpokemon = result.data.results;
+        fs.writeFileSync("data/db.json", JSON.stringify(result.data.results));
+      });
+  }
 });
 
 app.get("/search", async (req, res) => {
