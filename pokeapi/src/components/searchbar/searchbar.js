@@ -18,7 +18,7 @@ const SearchBar = ({ handlerSubmit }) => {
           value={InputName}
         />
         <button
-          disabled={InputName.length ? false : true}
+          disabled={false}
           type="submit"
           className="button_search"
         >
