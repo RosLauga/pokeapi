@@ -5,20 +5,23 @@ import {  prettyDOM } from '@testing-library/dom';
 
 
 describe("test search bar", () => {
+    let component
+    beforeEach(()=> {
+        mockHandler = jest.fn()
+        component = render(<SearchBar handlerSubmit={mockHandler}/>)
+    } )
 
     test("render the component",()=> {
     render(<SearchBar />)    
 })
     test("must exists a button",()=> {
-        const component = render(<SearchBar/>)
+        
         const button = component.container.querySelector('button')
         console.log(prettyDOM(button))
     });
 
     test("must click the button",()=> {
-        const mockHandler = jest.fn()
-
-        const component = render(<SearchBar handlerSubmit={mockHandler} />)
+        
         const buttonclick = component.getByText('Buscar')
 
         fireEvent.submit(buttonclick)
