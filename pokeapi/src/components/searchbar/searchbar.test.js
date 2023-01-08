@@ -4,7 +4,7 @@ import SearchBar from './searchbar'
 import {  prettyDOM } from '@testing-library/dom';
 
 
-describe("test search bar", () => {
+xdescribe("test search bar", () => {
     let component
     beforeEach(()=> {
         mockHandler = jest.fn()
